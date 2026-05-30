@@ -30,8 +30,10 @@ describe('PUP SIS Login', () => {
     cy.get('input[type="password"]')
       .type('Dec032004')
 
+    // sign in button
     cy.get('input[value="Sign in"]').click()
 
+    // view grade
     cy.contains('Grades').click()
 
   })

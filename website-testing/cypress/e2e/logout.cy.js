@@ -30,10 +30,13 @@ describe('PUP SIS Login', () => {
     cy.get('input[type="password"]')
       .type('Dec032004')
 
+    // sign in button
     cy.get('input[value="Sign in"]').click()
 
+    // dropdown
     cy.get('a[data-toggle="dropdown"]').click()
 
+    // logout button
     cy.get('a[href="https://sis2.pup.edu.ph/student/authentication/logout"]').click()
 
   })
